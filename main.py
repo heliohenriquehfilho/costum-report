@@ -1,13 +1,8 @@
 import dash
 import pandas as pd
-from dash import Dash, dcc, html, Input, Output
-from plotly.subplots import make_subplots
+from dash import dcc, html, Input, Output
 import plotly.graph_objects as go
 import plotly.express as px
-import dash_html_components as html
-import flask
-import dash_core_components as dcc
-from dash.dependencies import Input, Output, State
 import dash_bootstrap_components as dbc
 
 colors = {
@@ -17,6 +12,7 @@ colors = {
 
 df = px.data.gapminder().query("continent == 'Oceania'")
 fig = px.line(df, x='year', y='lifeExp', color='country')
+fig.update_layout(paper_bgcolor=colors['bg'])
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
@@ -32,23 +28,9 @@ figs = go.Figure(data=[go.Table(
                fill_color='lavender',
                align='left'))
 ])
+figs.update_layout(paper_bgcolor=colors['bg'])
 
 app.layout = html.Div([
-    dbc.Navbar([
-        html.A(
-            dbc.Row([
-                dbc.Col(html.Img(src=labsmart-branco.png, height="50px")),
-                dbc.Col(dbc.NavbarBrand(
-                    html.H1("Title", className="ml-2")))])),
-        dbc.NavbarToggler(id="navbar-toggler", n_clicks=0),
-        dbc.Collapse(search_bar, id="navbar-collapse", navbar=True, is_open=False),
-        dbc.NavbarToggler(id="navbar-toggler2"),
-        dbc.Collapse(
-            dbc.Nav(
-                [dropdown], className="ml-auto", navbar=True),
-            id="navbar-collapse2",
-            navbar=True,
-        )]),
     html.H3(['Relatório personalizavel com gráficos e tabelas.'], style={'color':'#F8F8FF',
                                                                          'align-objects':'center',
                                                                          'display': 'flex',
@@ -117,14 +99,27 @@ app.layout = html.Div([
             'padding':'14px'
             }),
         html.Div([
-            html.H4(['LABSMART']),
-            html.A(['contato'], style={'color':'#F8F8FF','align-objects':'center',
-            'align-objects':'center','justify-content':'center','font-size':'16','text-align':'center','background-color': '#808080', 'font-size':'14px'})
+            html.Img(
+                src='http://labsmart.ifsc.edu.br/esplanada/img/labsmart-preto.png',
+                style={
+                    'height': '10%',
+                    'width': '10%',
+                    'padding-top' : 0,
+                    'padding-right' : '10px',
+                    'padding-left': '10px'},
+                    ),
 
-            ], style={'color':'#F8F8FF','align-objects':'center','display': 'flex','flex-direction':'row',
-            'align-objects':'center','justify-content':'center','width': '400','font-size':'16','text-align':'center',
+            html.A(['contato'], style={'color':'#F8F8FF','align-objects':'center',
+            'align-objects':'center','justify-content':'center','text-align':'center','background-color': '#808080','margin-left':'40%','margin-top':'5px' ,'font-size':'14px'})
+
+            ], style={'color':'#F8F8FF','align-objects':'left','display': 'flex','flex-direction':'row',
+            'align-objects':'left','justify-content':'left','width': '400','text-align':'left',
             'margin':'-8px','padding': '14px','border-style': 'solid','background-color': '#808080'})
-], style={'margin':'0px', 'background-color':'#F8F0E3'})
+
+            ], style={'margin':0,'padding':0, 'background-color':'#F8F0E3'})
+
+fig.write_image("images/fig1.pdf")
+figs.write_image("images/fig1.pdf")
 
 if __name__ == '__main__':
     app.run_server(debug=True)
