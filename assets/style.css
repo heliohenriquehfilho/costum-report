@@ -1,73 +1,119 @@
-.title{
-    font-family: 'Gotham';
-    background-color: #488A99;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
+.navbar{
+    font-family: Garamond;
+    background-color: #b8b9ba;
+    align-items:left;
+    align-content: left;
+    justify-content: left;
     justify-items: center;
     align-self: center;
     justify-self: center;
     display: flex;
     flex-direction: row;
-    width: 100%;
     text-align: center;
-    margin: -8px;
-    padding: 7px;
-    padding-top: 10px;
-    padding-bottom: 25px;
+    margin-top:-8px;
+    padding-top: 5px;
+    padding-bottom: 4px;
     font-weight: bold;
     color: #DADADA;
 }
 
+.company-logo, .image-logo{
+    font-family: Garamond;
+    height: 40px;
+    width: 180px;
+    align-content: center;
+    justify-content: center;
+    margin-right: 20%;
+    margin-top: 1%;
+    padding: 0;
+}
+
+.date{
+    font-family: Garamond;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    margin-left: 5%;
+    margin-right:8%;
+    margin-top: 20px;
+}
+
+.title{
+    font-family: Garamond;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    margin-left:5%;
+    margin-right:15%;
+    margin-top: 1%;
+}
+
+.image-logo{
+    font-family: Garamond;
+    padding: 0;
+    margin: 0;
+}
+
 .text{
-    font-family: 'Gotham';
+    font-family: Garamond;
     text-align: justify;
     text-justify: inter-word;
     padding: 5px;
     width: 50%;
     magin: 8px;
-    text-indent: 50px;
+    margin-right: 20px;
     background-color: white;
     flex-direction: column;
     justify-content: left;
     align-items: left;
     justify-items: left;
     align-content: left;
+    font-size: 17px;
 }
 
 .graph{
-    font-family: 'Gotham';
-    padding: 5px;
-    margin: 8px;
-    width: 40%;
-    height: 400px;
+    font-family: Garamond;
+    padding-bottom:0;
+    margin-bottom:0;
+    width: 50%;
+    height: 350px;
     background-color: white;
 }
 
+.fig{
+    font-family: Garamond;
+    width:190%;
+    height: 100%;
+}
+
 .first-box{
-    font-family: 'Gotham';
+    font-family: Garamond;
     display:flex;
-    flex-direction:row;
+    flex-direction: row;
     background-color:white,;
     padding:14px;
-    height: 50%;
+    height: 48%;
     margin: -8px;
 }
 
 .table{
-    font-family: 'Gotham';
+    font-family: Garamond;
     width: 50%;
-    height: 50%px;
+    height: 50%;
     margin: 8px;
     padding: 5px;
     justify-content: center;
     justify-items: center;
     align-items: center;
     align-content: center;
-    background-color: white;
+    background-color: white
+    font-size: 12px;
 }
+
 .second-box{
-    font-family: 'Gotham';
+    font-family: Garamond;
     display:flex;
     flex-direction:row;
     background-color:white,;
@@ -77,95 +123,198 @@
 }
 
 .logo{
-    font-family: 'Gotham';
-    height: 50%;
-    width: 20%;
+    font-family: Garamond;
+    height: 40%;
+    width: 12%;
     padding-top: 0;
+    margin-top: 16px;
     padding-right: 10px;
-    padding-left: 10px;
+    margin-left:-3.5%;
+    margin-right:50%;
 }
 
 .image{
-    font-family: 'Gotham';
+    font-family: Garamond;
     height: 50%;
     width: 50%;
+    padding:0;
 }
 
-.link{
-    font-family: 'Gotham';
-    color:black;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-left: 30%;
-    margin-top: 5px;
+.powered{
+    font-family: Garamond;
+    margin-top:0.1%;
+    margin-right:15px;
+    padding-right:0;
+    padding-top:10px;
 }
 
-a{
-    font-family: 'Gotham';
+A{
+    font-family: Garamond;
     text-decoration: none;
     color: black;
     font-size: 16px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .footer{
-    font-family: 'Gotham';
-    background-color: #488A99;
+    font-family: Garamond;
+    background-color: #b8b9ba;
     align-objects: left;
     display: flex;
     flex-direction: row;
     justify-content: left;
     text-align: left;
-    margin: -8px;
     padding: 14px;
 }
 
 .outter-box-style{
-    font-family: 'Gotham';
+    font-family: Garamond;
     margin: 0;
     padding: 0%;
     background-color: white;
 }
 
 .subtitle{
-    font-family: 'Gotham';
+    font-family: Garamond;
     font-weight: bold;
+    color: Black;
 }
 
 .btn{
-    font-family: 'Gotham';
+    margin-top:12px;
+    font-family: Garamond;
     background-color: #ddd;
     border: none;
     color: black;
     text-align: center;
-    font-size: 12px;
-    margin-left:10px;
+    font-size: 16px;
+    margin-left:60%;
     transition: 0.3s;
+    margin: 5px;
 }
 
 .btn:hover {
+    font-family: Garamond;
     background-color: #3e8e41;
     color: white;
 }
 
 .citacao{
-    font-family: 'Gotham';
+    font-family: Garamond;
     display: flex;
-    flex-direction: column;
-
-}
-
-.cit{
-    font-family: 'Gotham';
-    font-size: 16px; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight: 700; 
-    line-height: 26.4px;
-    color:black;
+    flex-direction: row;
+    background-color: #b8b9ba;
+    border-radius: 10px;
     text-align: left;
     justify-content: left;
     align-items: left;
     justify-items: left;
     align-content: left;
+    padding: 4px;
+    width:35%;
+}
+
+H5{
+    font-family: Garamond;
+    margin:0;
+    padding:0;
+}
+
+.cit{
+    font-family: Garamond;
+    font-size: 16px;
+    font-weight: bold;
+    color:black;
+    text-align: left;
+    justify-content: left;
+    align-items: left;
+    align-content: left;
+    margin-left:10px;
+    padding-left:0px;
+}
+
+.cit-link{
+    font-family: Garamond;
+    text-align:center;
+    justify-content: center;
+    align-content: center;
+    margin-top: 2%;
+    margin-right: 10px;
+}
+
+body{
+    font-family: Garamond;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+    .navbar{
+        font-family: Garamond;
+        display: flex;
+        flex-direction: column;
+        margin-right:10px;
+    }
+    .company-logo, .image-logo{
+        font-family: Garamond;
+        margin-left:10px;
+        width: 101%;
+        height: 100%;
+        align-content: center;
+        justify-content: center;
+    }
+    .graph{
+        font-family: Garamond;
+        width:101%;
+    }
+    .text{
+        font-family: Garamond;
+        width: 99%;
+    }
+    .first-box{
+        font-family: Garamond;
+        width: 91%;
+        display:flex;
+        flex-direction: column;
+    }
+    .second-box{
+        font-family: Garamond;
+        width: 91%;
+        display:flex;
+        flex-direction:column;
+    }
+    .footer{
+        font-family: Garamond;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 91%;
+    }
+    .fig{
+        font-family: Garamond;
+        width:101%;
+    }
+    .citacao{
+        font-family: Garamond;
+        display: flex;
+        flex-direction: column;
+        width:101%;
+    }
+    .logo{
+        font-family: Garamond;
+        width: 100%;
+    }
+    .table{
+        font-family: Garamond;
+        width: 91%;
+    }
+    body{
+        font-family: Garamond;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
 }
